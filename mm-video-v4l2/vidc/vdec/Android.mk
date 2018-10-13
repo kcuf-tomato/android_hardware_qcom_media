@@ -121,6 +121,7 @@ LOCAL_STATIC_LIBRARIES  := libOmxVidcCommon
 LOCAL_SRC_FILES         += src/omx_vdec_msm8974.cpp
 
 LOCAL_CLANG_CFLAGS      += -Wno-absolute-value -Wno-pointer-bool-conversion
+LOCAL_CFLAGS            += -Wno-error
 
 include $(BUILD_SHARED_LIBRARY)
 
@@ -163,6 +164,7 @@ endif
 LOCAL_SRC_FILES         += src/hevc_utils.cpp
 
 LOCAL_STATIC_LIBRARIES  := libOmxVidcCommon
+LOCAL_CFLAGS            += -Wno-error
 
 include $(BUILD_SHARED_LIBRARY)
 
